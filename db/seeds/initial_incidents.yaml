@@ -1,0 +1,17 @@
+- first_name: Michael
+  last_name: Schmidt
+  age: 47
+  race: White
+  gender: M
+  address: 2728 McKinnon Street
+  city: Dallas
+  state: Texas
+  date: 2014-01-02
+  time: 01:50
+  suspected_weapon: Handgun
+  suspected_weapon_detail: ".380 caliber semi-automatic pistol"
+  summary: |
+    Suspect shot at officers and then ran at the officers while continuing to shoot. Four officers returned fire and struck the suspect 9 times.
+  report_url: http://www.dallaspolice.net/ois/docs/narrative/2014/OIS_2014_912B.pdf
+  leo_agency: Dallas Police Department
+  cause_of_death: gunshot

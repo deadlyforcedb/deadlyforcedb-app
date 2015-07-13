@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+require 'yaml'
+fname = File.expand_path("../seeds/initial_incidents.yaml", __FILE__)
+incidents = YAML.load_file(fname)
+puts "Opening #{fname}: #{incidents.length} incidents"
+incidents.each do |d|
+    i = Incident.create(d)
+    puts "#{i.date.strftime('%Y-%m-%d')} #{i.full_name}, #{i.age}"
+end
